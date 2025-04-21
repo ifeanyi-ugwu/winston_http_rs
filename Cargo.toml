@@ -2,6 +2,13 @@
 name = "winston_http"
 version = "0.1.0"
 edition = "2021"
+description = "winston-http for rust"
+license = "MIT"
+documentation = "https://docs.rs/winston_http"
+repository = "https://github.com/ifeanyi-ugwu/winston_http_rs"
+authors = ["ifeanyi ugwu"]
+keywords = ["winston", "transport"]
+categories = ["development-tools::debugging"]
 
 [dependencies]
 logform = { version = "0.4.0", features = ["serde"] }
