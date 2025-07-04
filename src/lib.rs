@@ -105,6 +105,12 @@ impl Transport for HttpTransport {
         }
     }
 
+    fn log_batch(&self, logs: Vec<LogInfo>) {
+        if let Err(e) = self.send_logs(&logs) {
+            eprintln!("Failed to send log batch: {}", e);
+        }
+    }
+
     fn get_level(&self) -> Option<&String> {
         self.options.level.as_ref()
     }
